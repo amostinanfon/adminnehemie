@@ -43,12 +43,12 @@ export default function UserList() {
     },
     { field: "email", headerName: "Email", width: 200 },
     {
-      field: "lastName",
+      field: "lastname",
       headerName: "Nom",
       width: 120,
     },
     {
-      field: "firstName",
+      field: "firstname",
       headerName: "Prenom",
       width: 120,
     },
