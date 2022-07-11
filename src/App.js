@@ -9,7 +9,7 @@ import NewUser from "./pages/newUser/NewUser";
 import ProductList from "./pages/productList/ProductList";
 import Product from "./pages/product/Product";
 import NewProduct from "./pages/newProduct/NewProduct";
-import Login from "./pages/login/Login";
+//import Login from "./pages/login/Login";
 
 function App() {
 
@@ -19,9 +19,9 @@ const admin = "is_Admin"
   return (
     <Router>
       <Switch>
-          <Route path="/login">
+          {/* <Route path="/login">
             <Login />
-          </Route>
+          </Route> */}
           { admin && (<>
             <Topbar />
             <div className="container">

@@ -5,7 +5,7 @@ import { DeleteOutline } from "@material-ui/icons";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { deleteUser, getUsers } from "../../redux/apiCalls";
+import { deleteUsers, getUsers } from "../../redux/apiCalls";
 
  
 
@@ -13,8 +13,9 @@ export default function UserList() {
 
   const dispatch = useDispatch();
   const users = useSelector((state) => state.user.user.currentUser);
+  const user = useSelector((state) => state);
 
-  console.log(users);
+  console.log(user);
 
   useEffect(() => {
     getUsers(dispatch);
@@ -22,7 +23,7 @@ export default function UserList() {
 
 
   const handleDelete = (id) => {
-    deleteUser(id , dispatch);
+    deleteUsers(id , dispatch);
   };
   
   const columns = [

@@ -20,7 +20,7 @@ export default function FeaturedInfo() {
 
       getIncome();
       
-  }, [])
+   }, [])
 
   return (
     <div className="featured">

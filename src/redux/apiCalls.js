@@ -21,7 +21,8 @@ import { loginStart ,
          getUserFailure, 
          deleteUserStart, 
          deleteUserSuccess, 
-         deleteUserFailure 
+         deleteUserFailure,
+
     } from './userRedux';
 
 
@@ -87,7 +88,7 @@ export const getUsers = async (dispatch) =>{
     dispatch(getUserFailure());
     }
 }
-export const deleteUser = async (id,dispatch) =>{
+export const deleteUsers = async (id,dispatch) =>{
     dispatch(deleteUserStart());
     try {
         const res = await userRequest.delete(`/users/${id}`)
